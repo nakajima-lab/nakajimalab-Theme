@@ -16,7 +16,7 @@
                     <div class="cont-text">
                         <p>わたしたち中島研究室（感性情報メディア研究室）は、人の心や感覚について理解を深めながら作品制作を行う研究室です。</p>
                         <p>人間の感性を明らかにし、感性にはたらきかける新たなメディアの創出に取り組みます。</p>
-                        <p class="arrow">
+                        <p class="arrow right">
                             <a href="<?php echo esc_url( home_url( '/about' ) ); ?>">
                                 <svg width="23" height="18" viewBox="0 0 23 18"xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1.71875 9H21.3385M21.3385 9L14.305 2M21.3385 9L14.305 16" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
@@ -33,7 +33,7 @@
                     <div class="cont-text">
                         <p>中島研究室では、研究や制作に必要な理論や技術について、輪講と呼ばれる形態を採用しています。</p>
                         <p>この輪講により、学生が受動的に学習するのではなく、全員が主体となり能動的に知識を高められる場を整えています。</p>
-                        <p class="arrow">
+                        <p class="arrow right">
                             <a href="<?php echo esc_url( home_url( '/activities' ) ); ?>">
                                 <svg width="23" height="18" viewBox="0 0 23 18"xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1.71875 9H21.3385M21.3385 9L14.305 2M21.3385 9L14.305 16" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>

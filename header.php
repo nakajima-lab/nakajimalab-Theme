@@ -31,6 +31,7 @@
                 ?>
     </title>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/reset.css">
+    <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/img/nkajimaLogo2.png">
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
