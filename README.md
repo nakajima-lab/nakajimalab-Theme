@@ -20,6 +20,7 @@
 - タイトル分岐（ https://kt-life.net/wp-title-php/ , https://whitebear-seo.co.jp/wordpress-title-conditional-branch/ ）
 - 管理画面カスタマイズ（ https://baigie.me/officialblog/2022/04/19/wordpress-tips-1/ ）
 - ホームURLショートコード（ https://webtobira.com/%E6%9C%AA%E5%88%86%E9%A1%9E/1205/ ）
+- wp pusher（ https://myscreate.com/wppusher/ ）
 
 ## 何か反映されないときの対処
 - https://dezanari.com/wordpress-cpt-post-not-found/
