@@ -10,22 +10,23 @@
             global $page, $paged;
                 
                 if(is_front_page()): 
-                    echo '中島研究室｜東京工芸大学';
+                    bloginfo('name');
                 elseif(is_page()):
-                    wp_title('-', true, right);
-                    echo'中島研究室｜東京工芸大学'; 
+                    wp_title('-', true, 'right');
+                    bloginfo('name');
                 elseif(is_single()):
-                    wp_title('-', true, right);
-                    echo'中島研究室｜東京工芸大学'; 
+                    wp_title('-', true, 'right');
+                    bloginfo('name');
                 elseif(is_archive()):
                     echo esc_html(get_post_type_object(get_post_type())->label);
-                    echo' - 中島研究室｜東京工芸大学'; 
+                    echo' - ';
+                    bloginfo('name');; 
                 else:
                     the_title();
                 endif;
                 
                 if($paged >= 2 || $page >= 2) : //２ページ目以降の場合
-                    echo ' - 中島研究室｜東京工芸大学' . sprintf('%sページ',
+                    echo ' - 中島研究室｜東京工芸大学'.sprintf('%sページ',
                     max($paged,$page));
                 endif;
                 ?>
