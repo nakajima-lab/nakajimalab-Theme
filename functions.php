@@ -150,7 +150,7 @@ array(
 ),
 'public' => true,
 'has_archive' => true,
-'supports' => array('title','editor','thumbnail'),
+'supports' => array('title','editor','thumbnail', 'author'),
 )
 );
 
@@ -167,7 +167,7 @@ register_post_type(
   ),
   'public' => true,
   'has_archive' => true,
-  'supports' => array('title','editor','thumbnail'),
+  'supports' => array('title','editor','thumbnail','author'),
   )
   );
   
