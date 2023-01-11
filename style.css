@@ -651,7 +651,6 @@ ul{
 
     .article-wrap .main-contents .contents .cont-text{
         margin-left: 3em;
-        min-width: 100%;
     }
 
     .article-wrap{
@@ -690,7 +689,8 @@ ul{
 
     .cont-text{
         margin-top: 4em;
-        padding-right: 4em;
+        /* padding-right: 4em;
+        min-width: 100%; */
     }
 
     .search-area{
