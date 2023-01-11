@@ -345,6 +345,30 @@ ul{
     background-color: var(--logoColor-orange);
 }
 
+.search{
+    position: relative;
+}
+
+.search-area{
+    width: 500px;
+    padding: 20px 130px 20px 30px;
+    border: solid #BCBCBC 1px;
+    border-radius: 100vh;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.s-btn{
+    position: absolute;
+    top: 10px;
+    left: calc(500px - 106px);
+    padding: 10px 30px;
+    border-radius: 100vh;
+    border: solid var(--text-color) 1px;
+    background-color: var(--text-color);
+    color: var(--primary-color);
+}
+
 .container a{
     display: block;
     padding: 20px 30px;

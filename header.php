@@ -20,7 +20,13 @@
                 elseif(is_archive()):
                     echo esc_html(get_post_type_object(get_post_type())->label);
                     echo' - ';
-                    bloginfo('name');; 
+                    bloginfo('name');
+                elseif(is_search()):
+                    echo '「';
+                    echo the_search_query();
+                    echo '」の検索結果';
+                    echo '-';
+                    bloginfo('name');
                 else:
                     the_title();
                 endif;
@@ -54,6 +60,10 @@
                     echo 'Think different';
                 elseif(is_archive()):
                     echo esc_html(get_post_type_object(get_post_type())->label);
+                elseif(is_search()):
+                    echo '「';
+                    echo the_search_query();
+                    echo '」の検索結果';
                 else:
                     the_title();
                 endif;

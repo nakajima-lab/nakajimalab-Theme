@@ -16,7 +16,7 @@
                       }
                       $paged = ( get_query_var( 'paged' ) ) ? absint( get_query_var( 'paged' ) ) : 1;
                       $args = [
-                        'post_type' => 'news', // 投稿タイプのスラッグ(通常投稿なので'post')
+                        'post_type' => 'manual', // 投稿タイプのスラッグ
                         'paged' => $paged, // ページネーションがある場合に必要
                         'posts_per_page' => $num, // 表示件数
                       ];
@@ -24,16 +24,8 @@
                     if ( $wp_query->have_posts() ) :
                     while ( $wp_query->have_posts() ) : $wp_query->the_post();
                     ?>
-                    
+                    <?php get_search_form(); ?>
                         <div class="news-cont">
-                            <div class="flex date">
-                                <p><?php the_time('Y年m月d日'); ?></p>
-                                <?php
-                                    $category = get_the_category();
-                                    $tag = get_the_tags();
-                                    echo '<span class="tag '.$tag[0]->slug.'">'.$category[0]->name.'</span>';
-                                ?>
-                            </div>
                             <p class="container"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
                         </div>
                         <?php endwhile; else: ?>

@@ -20,7 +20,7 @@ function my_script_init()
  function sort_side_menu( $menu_order ) {
   return array(
     "index.php", // ダッシュボード
-    "edit.php?post_type=manuel",
+    "edit.php?post_type=manual",
     "edit.php?post_type=news",
     "edit.php?post_type=work",
     "edit.php?post_type=page", // 固定ページ
@@ -81,7 +81,7 @@ add_shortcode('home_url', 'sc_home_url');
 
 function my_replace_to_a( $postarr ) {
   global $post;
-  if('news' == get_post_type() || 'work' == get_post_type()){
+  if('news' == get_post_type() || 'work' == get_post_type() || 'manual' == get_post_type()){
     $postarr['post_content'] = str_replace('<a', '<a class="link"', $postarr['post_content'] );
   }
   return $postarr;
@@ -90,7 +90,7 @@ add_filter('wp_insert_post_data', 'my_replace_to_a');
 
 function my_replace_to_h3( $postarr ) {
   global $post;
-  if('news' == get_post_type() || 'work' == get_post_type()){
+  if('news' == get_post_type() || 'work' == get_post_type() || 'manual' == get_post_type()){
     $postarr['post_content'] = str_replace('<h3', '<h3 class="heading-3"', $postarr['post_content'] );
   }
   return $postarr;
@@ -99,7 +99,7 @@ add_filter('wp_insert_post_data', 'my_replace_to_h3');
 
 function my_replace_to_img( $postarr ) {
   global $post;
-  if('news' == get_post_type() || 'work' == get_post_type()){
+  if('news' == get_post_type() || 'work' == get_post_type() || 'manual' == get_post_type()){
     $postarr['post_content'] = str_replace('<img', '<img class="article-img"', $postarr['post_content'] );
   }
   return $postarr;
@@ -159,7 +159,7 @@ register_taxonomy_for_object_type('post_tag', 'work');
 //カスタム投稿タイプ２（ここまで）
 
 register_post_type(
-  'manuel',
+  'manual',
   array(
   'labels' => array(
   'name' => __( 'マニュアル' ),
@@ -171,8 +171,8 @@ register_post_type(
   )
   );
   
-  register_taxonomy_for_object_type('category', 'manuel');
-  register_taxonomy_for_object_type('post_tag', 'manuel');
+  register_taxonomy_for_object_type('category', 'manual');
+  register_taxonomy_for_object_type('post_tag', 'manual');
 
 }
 

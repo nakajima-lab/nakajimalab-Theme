@@ -5,9 +5,10 @@
             <section class="contents">
                     <div class="title">
                         <span class="border-h"></span>
-                        <h2><?php echo esc_html(get_post_type_object(get_post_type())->label); ?></h2>
+                        <h2>「<?php the_search_query(); ?>」の検索結果</h2>
                     </div>
                     <div class="cont-text">
+                    <?php get_search_form(); ?>
                     <?php
                     if( wp_is_mobile() ){
                         $num = 3; // スマホの表示数(全件は-1)
@@ -16,28 +17,20 @@
                       }
                       $paged = ( get_query_var( 'paged' ) ) ? absint( get_query_var( 'paged' ) ) : 1;
                       $args = [
-                        'post_type' => 'news', // 投稿タイプのスラッグ(通常投稿なので'post')
+                        'post_type' => 'manual', // 投稿タイプのスラッグ
                         'paged' => $paged, // ページネーションがある場合に必要
                         'posts_per_page' => $num, // 表示件数
+                        's' => get_search_query(),
                       ];
                       $wp_query = new WP_Query($args);
                     if ( $wp_query->have_posts() ) :
                     while ( $wp_query->have_posts() ) : $wp_query->the_post();
                     ?>
-                    
                         <div class="news-cont">
-                            <div class="flex date">
-                                <p><?php the_time('Y年m月d日'); ?></p>
-                                <?php
-                                    $category = get_the_category();
-                                    $tag = get_the_tags();
-                                    echo '<span class="tag '.$tag[0]->slug.'">'.$category[0]->name.'</span>';
-                                ?>
-                            </div>
                             <p class="container"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
                         </div>
                         <?php endwhile; else: ?>
-                        <p>まだニュースがありません</p>
+                        <p>検索結果はありませんでした。再度検索してください。</p>
                         <?php endif; ?>
                         <?php wp_reset_postdata(); ?>
                         <div class="arrow">
