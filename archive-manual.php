@@ -8,6 +8,7 @@
                         <h2><?php echo esc_html(get_post_type_object(get_post_type())->label); ?></h2>
                     </div>
                     <div class="cont-text">
+                    <?php get_search_form(); ?>
                     <?php
                     if( wp_is_mobile() ){
                         $num = 3; // スマホの表示数(全件は-1)
@@ -24,7 +25,6 @@
                     if ( $wp_query->have_posts() ) :
                     while ( $wp_query->have_posts() ) : $wp_query->the_post();
                     ?>
-                    <?php get_search_form(); ?>
                         <div class="news-cont">
                             <p class="container"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
                         </div>
