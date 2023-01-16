@@ -39,7 +39,7 @@
     </title>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/reset.css">
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/img/nkajimaLogo2.png">
-    <script src="js/snap.svg-min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/snap.svg-min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.3.2/vivus.js"></script>
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,6 +50,15 @@
 </head>
 
 <body>
+    <div id="js-load-bg">
+        <div id="js-load-logo">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/nakalogo.svg" alt="">
+        </div>
+        <svg id="beat" width="298" height="134" viewBox="0 0 298 134" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="beatAnim" d="M0.5 66.5H95L104.5 47.5L113.5 82.5L130.5 27L141 111.5L157.5 0.5L176 132L203.5 66.5H298"/>
+        </svg>
+    </div>
+
     <header class="header flex">
         <div class="flex header-logo">
             <h1>
