@@ -572,24 +572,20 @@ ul{
 
     #glo-nav-sp{
         box-sizing: border-box;
-        /* display: none; */
+        display: none;
         width: 100%;
         position: absolute;
         left: 0;
         top: 0;
         padding: 85px 0 85px;
         background-color: rgba(255,255,255,0.9);
-        /* z-index: 9000; */
+        z-index: 9000;
         text-align: center;
-
-        height: 100vh;
-        overflow: auto;
-        -webkit-overflow-scrolling: touch;
         opacity: 0;
     }
 
     #glo-nav-sp.panelactive{
-        /* display: block; */
+        display: block;
         opacity: 1;
         z-index: 9000;
         height: 100vh;

@@ -78,12 +78,12 @@
         <div class="openbtn"><span></span><span></span></div>
             <div id="glo-nav-sp">
                     <ul class="flex sp-flex">
-                        <li><a href="<?php echo esc_url( home_url( '/about' ) ); ?>">中島研究室について</a></li>
-                        <li><a href="<?php echo esc_url( home_url( '/activities' ) ); ?>">活動内容</a></li>
-                        <li><a href="<?php echo esc_url(home_url( '/news' )); ?>">ニュース</a></li>
-                        <li><a href="<?php echo esc_url(home_url( '/work' )); ?>">作品・研究</a></li>
-                        <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>#teacher">指導教員</a></li>
-                        <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>#access">アクセス</a></li>
+                        <li class="glo-nav__item"><a href="<?php echo esc_url( home_url( '/about' ) ); ?>">中島研究室について</a></li>
+                        <li class="glo-nav__item"><a href="<?php echo esc_url( home_url( '/activities' ) ); ?>">活動内容</a></li>
+                        <li class="glo-nav__item"><a href="<?php echo esc_url(home_url( '/news' )); ?>">ニュース</a></li>
+                        <li class="glo-nav__item"><a href="<?php echo esc_url(home_url( '/work' )); ?>">作品・研究</a></li>
+                        <li class="glo-nav__item"><a href="<?php echo esc_url( home_url( '/' ) ); ?>#teacher">指導教員</a></li>
+                        <li class="glo-nav__item"><a href="<?php echo esc_url( home_url( '/' ) ); ?>#access">アクセス</a></li>
                     </ul>
             </div>
             <!-- <?php

@@ -62,7 +62,7 @@ gsap.fromTo(".article-wrap, .section-area-left",
     ease:"power1.inOut",
 });
 
-gsap.fromTo(".openbtn, .header-logo",
+gsap.fromTo(".openbtn, .header-logo, #glo-nav-sp",
     {
         opacity:0,
         y:-50,
@@ -103,6 +103,21 @@ gsap.fromTo(".sns-list__item",
     stagger:{
         from:"start",
         grid:[1,0],
+        each:0.1,
+        ease:"expo.out",
+    }
+});
+
+gsap.fromTo(".glo-nav__item",
+{
+    opacity:0,
+    y:-50,
+},
+{
+    y:0,
+    opacity:1,
+    stagger:{
+        from:"start",
         each:0.1,
         ease:"expo.out",
     }
