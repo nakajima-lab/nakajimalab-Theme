@@ -57,7 +57,7 @@
                 <?php
                 
                 if(is_front_page()): 
-                    echo 'Think different';
+                    bloginfo( 'description' );
                 elseif(is_archive()):
                     echo esc_html(get_post_type_object(get_post_type())->label);
                 elseif(is_search()):
