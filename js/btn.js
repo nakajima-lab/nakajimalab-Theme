@@ -1,5 +1,5 @@
-$(".openbtn").click(function () {//ボタンがクリックされたら
-	$(this).toggleClass('active');//ボタン自身に activeクラスを付与し
+$(".openbtn").click(function () {//ボタンがクリックされたら 
+    $(this).toggleClass('active');//ボタン自身に activeクラスを付与し
     $("#glo-nav-sp").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与
 });
 

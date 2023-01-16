@@ -62,7 +62,7 @@ gsap.fromTo(".article-wrap, .section-area-left",
     ease:"power1.inOut",
 });
 
-gsap.fromTo(".header",
+gsap.fromTo(".openbtn, .header-logo",
     {
         opacity:0,
         y:-50,
@@ -73,6 +73,24 @@ gsap.fromTo(".header",
     opacity:1,
     ease:"power1.inOut",
 });
+
+// $(".openbtn").click(function () {//ボタンがクリックされたら 
+//     gsap.to("#glo-nav-sp",
+//     {
+//     duration:1,
+//     autoAlpha:1,
+//     ease:"power1.inOut",
+// });
+// });
+
+// $(".#glo-nav a").click(function () {//ボタンがクリックされたら 
+//     gsap.from("#glo-nav-sp",
+//     {
+//     duration:1,
+//     autoAlpha:0,
+//     ease:"power1.inOut",
+// });
+// });
 
 gsap.fromTo(".sns-list__item",
 {
