@@ -7,4 +7,5 @@ $(".openbtn").click(function () {//ボタンがクリックされたら
 $("#glo-nav a").click(function () {//ナビゲーションのリンクがクリックされたら
     $(".openbtn").removeClass('active');//ボタンの activeクラスを除去し
     $("#glo-nav-sp").removeClass('panelactive');//ナビゲーションのpanelactiveクラスを除去し
+    $('body').toggleClass('noscroll');
 });
