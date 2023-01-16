@@ -9,9 +9,11 @@
             </header>
             <main class="main-contents">
                 <section class="contents">
-                    <div class="title">
-                        <span class="border-h"></span>
-                        <h2>中島研究室について</h2>
+                    <div id="anim-title">
+                        <div class="title fade-title">
+                            <span class="border-h"></span>
+                            <h2>中島研究室について</h2>
+                        </div>
                     </div>
                     <div class="cont-text">
                         <p>わたしたち中島研究室（感性情報メディア研究室）は、人の心や感覚について理解を深めながら作品制作を行う研究室です。</p>
@@ -26,9 +28,11 @@
                     </div>
                 </section>
                 <section class="contents">
-                    <div class="title">
-                        <span class="border-h"></span>
-                        <h2>活動内容</h2>
+                    <div id="anim-title">
+                        <div class="title fade-title">
+                            <span class="border-h"></span>
+                            <h2>活動内容</h2>
+                        </div>
                     </div>
                     <div class="cont-text">
                         <p>中島研究室では、研究や制作に必要な理論や技術について、輪講と呼ばれる形態を採用しています。</p>
@@ -43,9 +47,11 @@
                     </div>
                 </section>
                 <section class="contents">
-                    <div class="title">
-                        <span class="border-h"></span>
-                        <h2>ニュース</h2>
+                    <div id="anim-title">
+                        <div class="title fade-title">
+                            <span class="border-h"></span>
+                            <h2>ニュース</h2>
+                        </div>
                     </div>
                     <div class="cont-text">
                     <?php
@@ -86,9 +92,11 @@
                     </div>
                 </section>
                 <section class="contents">
-                    <div class="title">
-                        <span class="border-h"></span>
-                        <h2>作品・研究</h2>
+                    <div id="anim-title">
+                        <div class="title fade-title">
+                            <span class="border-h"></span>
+                            <h2>作品・研究</h2>
+                        </div>
                     </div>
                     <div class="cont-text">
                         <div class="grid work-list">
@@ -134,9 +142,11 @@
                     </div>
                 </section>
                 <section id="teacher" class="contents">
-                    <div class="title">
-                        <span class="border-h"></span>
-                        <h2>指導教員</h2>
+                    <div id="anim-title">
+                        <div class="title fade-title">
+                            <span class="border-h"></span>
+                            <h2>指導教員</h2>
+                        </div>
                     </div>
                     <div class="cont-text">
                         <h3>中島武三志</h3>
@@ -144,9 +154,11 @@
                     </div>
                 </section>
                 <section id="access" class="contents">
-                    <div class="title">
-                        <span class="border-h"></span>
-                        <h2>アクセス</h2>
+                    <div id="anim-title">
+                        <div class="title fade-title">
+                            <span class="border-h"></span>
+                            <h2>アクセス</h2>
+                        </div>
                     </div>
                     <div class="cont-text">
                         <div class="addr">
