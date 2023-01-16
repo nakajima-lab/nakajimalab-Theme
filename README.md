@@ -14,6 +14,17 @@
 - https://prograshi.com/wordpress/wp-custom-post/
 - https://takayakondo.com/wordpress-merit/
 
+## GSAP参考
+- https://ics.media/entry/210426/
+- https://ics.media/entry/200805/
+- https://kakechimaru.com/gsap_stagger/
+### グローバルメニューフェードインアウトアニメーション参考
+- https://flocafe.net/webdesign/humburgermenu/
+### GSAP公式リファレンス
+- https://greensock.com/docs/v3/GSAP
+- イージング( https://greensock.com/docs/v3/Eases )
+
+
 ## その他参考
 - ホバーして上から下とかのやつ（ https://www.nxworld.net/10-css-hover-fill-animation.html ）
 - class付与するときの条件分岐（ https://100webdesign.jp/services/wordpress/wp_result/wp_result-179/ ）
