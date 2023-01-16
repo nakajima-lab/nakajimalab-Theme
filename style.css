@@ -27,6 +27,10 @@ body{
     font-size: 16px;
 }
 
+body.noscroll{
+    overflow: hidden;
+}
+
 h1, h2, h3, h4, h5, h6{
     font-weight: 500;
 }
@@ -571,8 +575,6 @@ ul{
     }
 
     #glo-nav-sp{
-        box-sizing: border-box;
-        display: none;
         width: 100%;
         position: absolute;
         left: 0;
@@ -582,11 +584,13 @@ ul{
         z-index: 9000;
         text-align: center;
         opacity: 0;
+        visibility: hidden;
+        transition: .3s all;
     }
 
     #glo-nav-sp.panelactive{
-        display: block;
         opacity: 1;
+        visibility: visible;
         z-index: 9000;
         height: 100vh;
         overflow: auto;

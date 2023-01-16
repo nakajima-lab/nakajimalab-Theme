@@ -62,16 +62,15 @@ gsap.fromTo(".article-wrap, .section-area-left",
     ease:"power1.inOut",
 });
 
-gsap.fromTo(".openbtn, .header-logo, #glo-nav-sp",
+gsap.fromTo(".header-logo",
     {
-        opacity:0,
         y:-50,
     },
     {
-    y:0,
-    duration:1,
-    opacity:1,
-    ease:"power1.inOut",
+        y:0,
+        duration:1,
+        toggleClass:"fadeIn",
+        ease:"power1.inOut",
 });
 
 // $(".openbtn").click(function () {//ボタンがクリックされたら 
@@ -106,6 +105,17 @@ gsap.fromTo(".sns-list__item",
         each:0.1,
         ease:"expo.out",
     }
+});
+
+gsap.fromTo(".openbtn",
+{
+    opacity:0,
+    x:20,
+},
+{
+    x:0,
+    delay:1,
+    opacity:1,
 });
 
 gsap.fromTo(".glo-nav__item",
