@@ -50,6 +50,7 @@
 </head>
 
 <body>
+    <?php if(is_front_page()): ?>
     <div id="js-load-bg">
         <div id="js-load-logo">
             <img src="<?php echo get_template_directory_uri(); ?>/img/nakalogo.svg" alt="">
@@ -58,6 +59,7 @@
             <path class="beatAnim" d="M0.5 66.5H95L104.5 47.5L113.5 82.5L130.5 27L141 111.5L157.5 0.5L176 132L203.5 66.5H298"/>
         </svg>
     </div>
+    <?php endif; ?>
 
     <header class="header flex">
         <div class="flex header-logo">
