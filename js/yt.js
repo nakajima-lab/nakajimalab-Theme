@@ -11,15 +11,16 @@ function onYouTubeIframeAPIReady() {
     height: '315',
     width: '560',
     playerVars: {
-      controls: 0,
-      autoplay: 1,
-      disablekb:1,
-      enablejsapi: 1,
-      iv_load_policy: 3,
-      playsinline: 1,
-      rel: 0,
-      modestbranding: 1,
-      fs: 0
+      'controls': 0,
+      'autoplay': 1,
+      'disablekb':1,
+      'enablejsapi': 1,
+      'iv_load_policy': 3,
+      'playsinline': 1,
+      'rel': 0,
+      'mute': 1,
+      'modestbranding': 1,
+      'fs': 0
     },
     events: {
       'onReady': onPlayerReady,
