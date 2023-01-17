@@ -239,7 +239,7 @@ function moveAnim(){
             opacity:1,
             y:0,
             duration:0.8,
-            delay:0.5,
+            ease:"power4.out",
         }
     ).to(
         jsBeat,
@@ -251,7 +251,6 @@ function moveAnim(){
         {
             opacity:0,
             y:-50,
-            duration:0.8,
         },
         '-=0.2'
     ).to(
@@ -326,7 +325,6 @@ function loadAnim(){
             opacity:0,
             y:-50,
             duration:0.8,
-            delay:1,
         },
         '+=1'
     ).to(

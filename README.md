@@ -14,12 +14,15 @@
 - https://prograshi.com/wordpress/wp-custom-post/
 - https://takayakondo.com/wordpress-merit/
 
-## GSAP参考
+## アニメーション参考
 - https://ics.media/entry/210426/
 - https://ics.media/entry/200805/
 - https://kakechimaru.com/gsap_stagger/
 ### グローバルメニューフェードインアウトアニメーション参考
 - https://flocafe.net/webdesign/humburgermenu/
+### ロードアニメーション参考
+- https://b-risk.jp/blog/2022/05/gsap/
+- 初回のみ（ https://freefuntimes.com/?p=637 ）
 ### GSAP公式リファレンス
 - https://greensock.com/docs/v3/GSAP
 - イージング( https://greensock.com/docs/v3/Eases )
