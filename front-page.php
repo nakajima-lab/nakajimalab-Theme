@@ -172,7 +172,7 @@
                                 referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                         <h3>お問い合わせ</h3>
-                        <p class="form-link"><a href="">お問い合わせフォーム</a></p>
+                        <p class="form-link"><a href="<?php echo esc_url( home_url( '/form' ) ); ?>">お問い合わせフォーム</a></p>
                     </div>
                 </section>
             </main>
