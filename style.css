@@ -480,6 +480,7 @@ ul{
     border: solid var(--text-color) 1px;
     background-color: var(--text-color);
     color: var(--primary-color);
+    cursor: pointer;
 }
 
 .container a{
