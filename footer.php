@@ -16,7 +16,7 @@
             <div class="footer-nav-item">
                 <h4>お問い合わせ</h4>
                 <ul>
-                    <li><a href="">お問い合わせフォーム</a></li>
+                    <li><a href="<?php echo esc_url(home_url( '/form' )); ?>">お問い合わせフォーム</a></li>
                     <li><a href="https://twitter.com/63x4_252" target="_blank" rel="noopener noreferrer">twitter</a></li>
                     <li><a href="https://instagram.com/63x4_252" target="_blank" rel="noopener noreferrer">Instagram</a></li>
                     <li><a href="https://www.youtube.com/channel/UC1lZjsEPoC331A50vAqW3_A" target="_blank" rel="noopener noreferrer">YouTube</a></li>
