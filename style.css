@@ -124,8 +124,13 @@ img {
     justify-content: end;
 }
 
+.logo-link{
+    transition: all .3s;
+}
+
 .logo-link:hover{
     opacity: 0.4;
+    transition: all .3s;
 }
 
 .footer-nav-item a,

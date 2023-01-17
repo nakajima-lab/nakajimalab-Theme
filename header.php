@@ -100,8 +100,8 @@
 
     <header class="header flex">
         <div class="flex header-logo">
-            <h1>
-                <a class="logo-link" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/Logo_naka.svg" alt=""></a>
+            <h1 class="logo-link" >
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/Logo_naka.svg" alt=""></a>
             </h1>
             <p>
                 <?php
