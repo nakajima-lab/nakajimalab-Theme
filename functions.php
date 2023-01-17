@@ -135,6 +135,7 @@ array(
 ),
 'public' => true,
 'has_archive' => true,
+// 'show_in_rest' => true, //ブロックエディタ設定
 'supports' => array('title','editor','thumbnail','author'),
 )
 );
@@ -153,6 +154,7 @@ array(
 ),
 'public' => true,
 'has_archive' => true,
+// 'show_in_rest' => true, //ブロックエディタ設定
 'supports' => array('title','editor','thumbnail', 'author'),
 )
 );
@@ -170,6 +172,7 @@ register_post_type(
   ),
   'public' => true,
   'has_archive' => true,
+  // 'show_in_rest' => true, //ブロックエディタ設定
   'supports' => array('title','editor','thumbnail','author'),
   )
   );
