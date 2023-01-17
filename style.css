@@ -54,6 +54,13 @@ ul{
     list-style-type: none;
 }
 
+img {
+	/* user-drag: none;
+	-webkit-user-drag: none;
+	-moz-user-select: none; */
+    pointer-events: none;
+}
+
 #js-load-bg{
     position: fixed;
     top: 0;
@@ -245,6 +252,7 @@ ul{
 .yt-area{
     position: relative;
     display: grid;
+    pointer-events: none;
 }
 
 #js-main-movie,
