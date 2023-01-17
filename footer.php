@@ -27,33 +27,6 @@
     </footer>
 
     <?php wp_footer(); ?>
-
-    <?php if(is_front_page()):?>
-        <script type="text/javascript">
-            $(function(){
-                if(window.performance){
-                    if(performance.navigation.type == 1){
-                        loadAnim();
-                    }else{
-                        let ref = document.referrer;
-                        let hereHost = window.location.hostname;
-
-                        let sStr = "^https?://" + hereHost;
-                        // let sStr = hereHost;
-                        let rExp = new RegExp(sStr, "i");
-
-                        if(ref.length == 0){
-                            loadAnim();
-                        }else if(ref.match(rExp)){
-                            moveAnim();
-                        }else{
-                            loadAnim();
-                        }
-                    }
-                }
-            });
-        </script>
-    <?php endif; ?>
 </body>
 
 </html>

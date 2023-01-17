@@ -173,6 +173,13 @@ gsap.set(
 );
 
 gsap.set(
+    jsloadbg,
+    {
+        opacity:0,
+    }
+)
+
+gsap.set(
     jsSidebar,
     {
         opacity:0,
@@ -204,15 +211,40 @@ gsap.set(
     }
 );
 
+function loadedPage() {
+    const loadingID = document.getElementByClassName("js_loading");
+    loadingID.classList.add("loaded");
+  }
+  
+  if (!sessionStorage.getItem('visited')) {
+    sessionStorage.setItem('visited', 'first');
+    window.addEventListener('load', function () {
+      loadAnim();
+    });
+  }else {
+    moveAnim();
+    loadedPage();
+  }
+
 function moveAnim(){
 
     tl.to(
-        [jsloadlogo, jsBeat],
+        jsloadbg,
+        {
+            opacity:1,
+        }
+    ).to(
+        jsloadlogo,
         {
             opacity:1,
             y:0,
             duration:0.8,
-            delay:1,
+            delay:0.5,
+        }
+    ).to(
+        jsBeat,
+        {
+            opacity:0,
         }
     ).to(
         jsloadlogo,
@@ -220,17 +252,8 @@ function moveAnim(){
             opacity:0,
             y:-50,
             duration:0.8,
-            delay:1,
         },
-        '+=1'
-    ).to(
-        jsBeat,
-        {
-            opacity:0,
-            y:50,
-            duration:0.8,
-        },
-        '<'
+        '-=0.2'
     ).to(
         jsloadbg,
         {
@@ -285,6 +308,11 @@ function loadAnim(){
 
 
     tl.to(
+        jsloadbg,
+        {
+            opacity:1,
+        }
+    ).to(
         [jsloadlogo, jsBeat],
         {
             opacity:1,

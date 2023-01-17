@@ -50,8 +50,7 @@
 </head>
 
 <body>
-    <?php if(is_front_page()): ?>
-    <div id="js-load-bg">
+    <div id="js-load-bg" class="js_loading">
         <div id="js-load-logo">
             <img src="<?php echo get_template_directory_uri(); ?>/img/nakalogo.svg" alt="">
         </div>
@@ -59,7 +58,46 @@
             <path class="beatAnim" d="M0.5 66.5H95L104.5 47.5L113.5 82.5L130.5 27L141 111.5L157.5 0.5L176 132L203.5 66.5H298"/>
         </svg>
     </div>
-    <?php endif; ?>
+
+    <!-- <script type="text/javascript">
+            $(function(){
+                if(window.performance){
+                    if(performance.navigation.type == 1){
+                        loadAnim();
+                    }else{
+                        let ref = document.referrer;
+                        let hereHost = window.location.hostname;
+
+                        // let sStr = "^https?://" + hereHost;
+                        let sStr = hereHost;
+                        //let sStr = "/^https/" + hereHost;
+                        let rExp = new RegExp(sStr, "i");
+
+                        if(ref.length == 0){
+                            loadAnim();
+                        }else if(ref.match(rExp)){
+                            moveAnim();
+                        }else{
+                            loadAnim();
+                        }
+                    }
+                }
+            });
+
+                let ref = document.referrer;
+                        let hereHost = window.location.hostname;
+
+                        // let sStr = "^https?://" + hereHost;
+                        let sStr = hereHost;
+                        let rExp = new RegExp(sStr, "i");
+
+                        if(ref.match(rExp)){
+                            loadAnim();
+                        }else{
+                            moveAnim();
+                        }
+            });
+        </script> -->
 
     <header class="header flex">
         <div class="flex header-logo">
