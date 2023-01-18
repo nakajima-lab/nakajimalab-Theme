@@ -36,6 +36,7 @@
 - ホームURLショートコード（ https://webtobira.com/%E6%9C%AA%E5%88%86%E9%A1%9E/1205/ ）
 - wp pusher（ https://myscreate.com/wppusher/ ）
 - YouTube動画のマスク（ https://coliss.com/articles/build-websites/operation/css/less-absolute-positioning-modern-css.html ）
+- Twitterカード（ https://nelog.jp/wp-twitter-cards-custom ）
 
 ## 何か反映されないときの対処
 - https://dezanari.com/wordpress-cpt-post-not-found/
