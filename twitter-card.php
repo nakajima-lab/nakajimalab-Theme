@@ -41,11 +41,10 @@ if (is_single()){//単一記事ページの場合
 //ドメイン情報を$results[1]に取得する
 preg_match( '/https?:\/\/(.+?)\//i', admin_url(), $results );
 //画像の縦横幅を取得
-list($width,$height) = getimagesize($img_url);
-?>
+//list($width,$height) = getimagesize($img_url); ?>
 <meta name="twitter:domain" content="<?php echo $results[1] ?>">
-<meta name="twitter:image:width" content="<?php echo $width ?>">
-<meta name="twitter:image:height" content="<?php echo $height ?>">
+<!-- <meta name="twitter:image:width" content="<?php echo $width ?>">
+<meta name="twitter:image:height" content="<?php echo $height ?>"> -->
 <meta name="twitter:creator" content="@63x4_252">
 <meta name="twitter:site" content="@63x4_252">
 <!-- /Twitter Card -->
