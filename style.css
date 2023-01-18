@@ -368,6 +368,14 @@ img {
     animation-duration: 1.2s;
     transform: scaleY(0);
     animation-fill-mode:forwards;
+    -webkit-animation: title_anim;
+    -webkit-animation-duration: 1.2s;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-transform: scaleY(0);
+    -moz-animation: title_anim;
+    -moz-animation-duration: 1.2s;
+    -moz-animation-fill-mode: forwards;
+    -moz-transform: scaleY(0);
     /* transition: transform .3s; */
 }
 
@@ -375,17 +383,31 @@ img {
     0%{
         transform-origin:top;
         transform: scaleY(0);
+        -webkit-transform-origin: top;
+        -webkit-transform: scaleY(0);
+        -moz-transform-origin: top;
+        -moz-transform: scaleY(0);
     }
     50%{
         transform-origin: top;
         transform: scaleY(1);
+        -webkit-transform-origin: top;
+        -webkit-transform: scaleY(1);
+        -moz-transform-origin: top;
+        -moz-transform: scaleY(1);
     }
     50.001%{
         transform-origin: bottom;
+        -webkit-transform-origin: bottom;
+        -moz-transform-origin: bottom;
     }
     100%{
         transform-origin:bottom;
         transform: scale(1, 0);
+        -webkit-transform-origin: bottom;
+        -webkit-transform: scale(1, 0);
+        -moz-transform-origin: bottom;
+        -moz-transform: scale(1, 0);
     }
 }
 
@@ -877,6 +899,14 @@ img {
         animation-duration: 1.2s;
         transform: scaleY(0);
         animation-fill-mode:forwards;
+        -webkit-animation: title_anim;
+        -webkit-animation-duration: 1.2s;
+        -webkit-animation-fill-mode: forwards;
+        -webkit-transform: scaleY(0);
+        -moz-animation: title_anim;
+        -moz-animation-duration: 1.2s;
+        -moz-animation-fill-mode: forwards;
+        -moz-transform: scaleY(0);
         /* transition: transform .3s; */
     }
 
@@ -884,17 +914,31 @@ img {
         0%{
             transform-origin:left;
             transform: scaleX(0);
+            -webkit-transform-origin: left;
+            -webkit-transform: scaleX(0);
+            -moz-transform-origin: left;
+            -moz-transform: scaleX(0);
         }
         50%{
             transform-origin: left;
             transform: scaleX(1);
+            -webkit-transform-origin: left;
+            -webkit-transform: scaleX(1);
+            -moz-transform-origin: left;
+            -moz-transform: scaleX(1);
         }
         50.001%{
             transform-origin: right;
+            -webkit-transform: right;
+            -moz-transform-origin: right;
         }
         100%{
             transform-origin:right;
             transform: scale(0, 1);
+            -webkit-transform-origin: right;
+            -webkit-transform: scale(0, 1);
+            -moz-transform-origin: right;
+            -moz-transform: scale(0, 1);
         }
     }
 
