@@ -40,6 +40,24 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/reset.css">
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/img/nkajimaLogo2.png">
     <script src="<?php echo get_template_directory_uri(); ?>/js/snap.svg-min.js"></script>
+    <?php if(is_single()): ?> 
+    <meta name="twitter:card" content="summary" />
+    <!-- <meta name="twitter:site" content="@Twitterのユーザ名" /> -->
+    <meta property="og:url" content="<?php the_permalink(); ?>" />
+    <meta property="og:title" content="<?php the_title(); ?>" />
+    <meta property="og:description" content="<?php 
+    echo the_exerpt();
+    ?>" />
+    <meta property="og:image" content="<?php
+        if(has_post_thumbnail( $post->ID )):
+            $thumbnail_id = get_post_thumbnail_id(); 
+            $thumbnail_img = wp_get_attachment_image_src( $thumbnail_id , 'thumbnail' );
+            echo $thumbnail_img[0];
+        else:
+            echo "get_template_directory_uri(); ?>/screenshot.png";
+        endif;
+    ?>" />
+    <?php endif; ?>
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
