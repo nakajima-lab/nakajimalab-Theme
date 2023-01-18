@@ -1,5 +1,5 @@
 <!-- Twitter Card -->
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary_large_image">
 <?php
 if (is_single()){//単一記事ページの場合
 if(have_posts()): while(have_posts()): the_post();
