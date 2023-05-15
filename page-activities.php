@@ -14,14 +14,27 @@ get_header(); ?>
                         <h2>活動内容</h2>
                     </div>
                     <div class="cont-text">
-                        <p>中島研究室では、主に人々の感性について研究し、その感性に働きかけるメディアやデバイスの創出に取り組んでいます。</p>
-                        <p>また研究に必要な知識や技術について、学生全員が能動的に得られるような環境を整えています。それを実現しているのが《輪講》と呼ばれる形態です。</p>
+                        <p>中島研究室では学内中心ではありますが作品展示などを行っています。また、ゼミ内ではゼミ生の知識を深めるため、輪講を行い勉強を行っています。</p>
                     </div>
                 </section>
                 <section class="contents">
                     <div class="title">
                         <span class="border-h"></span>
-                        <h2>輪講について</h2>
+                        <h2>作品展示</h2>
+                    </div>
+                    <div class="cont-text">
+                        <p>オープンキャンパスや中野祭へ作品展示などを行っています。</p>
+                        <p>作品展示はゼミ内で有志を募り展示を行うこともあります。例えば2022年10月中野祭に出展した際はゼミ内で募集をかけ、一つの企画展を行いました。</p>
+                        <p>またオープンキャンパスでは高校生に向けて中島研究室もといインタラクティブメディア学科の魅力を伝える為、作品を展示しています。</p>
+                        <h3 class="heading-3">様子</h3>
+                        <img class="article-img" src="<?php echo get_template_directory_uri(); ?>/img/act/oc-1.webp" alt="">
+                        <img class="article-img" src="<?php echo get_template_directory_uri(); ?>/img/act/oc-2.webp" alt="">
+                    </div>
+                </section>
+                <section class="contents">
+                    <div class="title">
+                        <span class="border-h"></span>
+                        <h2>輪講</h2>
                     </div>
                     <div class="cont-text">
                         <p>輪講については、大辞泉より以下のように定義されています。</p>
