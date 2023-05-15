@@ -321,7 +321,8 @@ img {
 }
 
 .heading-3{
-    margin-top: 6.667em;
+    /* margin-top: 6.667em; :   */
+    margin-top: 4em;
 }
 
 .article-img{
